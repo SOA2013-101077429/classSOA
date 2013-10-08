@@ -1,0 +1,41 @@
+Rails Journal
+
+rails new myrotenpotatoes -T
+#Use to create an empty Rails app, create in desired directory
+
+#"Your bundle is complete" i.e. creation was a success
+
+#Newly created dir is also called an app root
+
+
+# use Haml for templates
+gem 'haml'
+# use Ruby debugger
+group :development, :test do
+gem 'debugger'
+end
+
+#Above code: specifies that it will use the Haml templating sys rather than built-in erb &
+it specifiess you want to use the interactive debugger debugger during development and testing but not in production
+
+bundle install --without production
+#checks if any gems specified in Gemfile are missing & need to be installed
+
+#"Your bundle is complete" :all the gems are there
+
+rails server
+#starts the app
+
+# file log/development.log  : shows apps log actiity including detailed errorinformation
+
+Adding routes
+
+Myrottenpotatoes::Application.routes.draw do
+resources :movies
+root :to => redirect ('/movies')
+end
+
+
+NB delete fiel public/indec.html
+
+
