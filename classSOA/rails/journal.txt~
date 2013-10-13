@@ -145,7 +145,5 @@ irb(main):016:0> requiem.destroy
 
 NOTE: See http://pastebin.com/5A76getY for code for mass assignment of movies to table
 
-Movie.all
-#returns all saved movies in table
 
 
