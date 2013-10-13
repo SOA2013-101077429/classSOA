@@ -38,4 +38,57 @@ end
 
 NB delete fiel public/indec.html
 
+LAb Session
+
+irb(main):002:0> name = "Busile"
+=> "Busile"
+irb(main):003:0> puts "hello #{name}"
+hello Busile
+=> nil
+
+#Adding a variable to a string
+
+#To delete 
+nums = [2,3,1,4,6,9,5]
+
+nms.delete_at(2)
+
+#will delete the string in position 2
+#to delete a specific value
+
+nums.delete(3)
+
+#to find the location 
+nums.index(6)
+
+nums.select {|a| a > 3}
+
+# finds all elements in the array with values greater than 3
+
+nums.map {|a| a > 4}
+#runs the block of code to give a result of the block for each element
+
+
+
+nums.map {|a| a*2}
+
+#takes evrey element in the array 
+
+rb(main):004:0> Hash.new
+=> {}
+irb(main):005:0> grades = {"soumya" => :A_plus, "de" => :B_minus, "arvin" => :A_minus, "shelley" => :A_minus}
+=> {"soumya"=>:A_plus, "de"=>:B_minus, "arvin"=>:A_minus, "shelley"=>:A_minus}
+irb(main):006:0> grades
+=> {"soumya"=>:A_plus, "de"=>:B_minus, "arvin"=>:A_minus, "shelley"=>:A_minus}
+
+#show me soumya's grade
+irb(main):007:0> grades["soumya"]
+=> :A_plus
+
+# add an extra student
+
+irb(main):008:0> grades["busile"] = :A
+=> :A
+irb(main):009:0> grades
+
 
