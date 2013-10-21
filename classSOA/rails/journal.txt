@@ -150,4 +150,28 @@ Movie.all
 
 Assignment 4.6 - 4.8
 
+Key Notes:
+
+Adding a link to a form: index.html.haml (at the end)
+= link_to 'Add new movie', new_movie_path
+
+therefore new method required
+
+def new
+# default: render 'new' template
+end
+
+creating a new movie: see pastebin.com/cWFkjxf3 and watch screencast 4.61
+
+Redirect and flash: create action : screencast 4.7.1
+
+params[] can take either symbols or a string (HasWithIndifferentAccess
+
+NOTE:
+If error message appears on browser... CHECK CODE AGAIN AND
+ALWAYS DOUBLE CHECK IF THE CODE IS ALIGNED AND THERE ARE ENOUGH ENDS, ( AND [ 
+Check colour coding 
+
+
+
 

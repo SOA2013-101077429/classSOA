@@ -19,7 +19,6 @@ m.valid?  # => false
 m.errors[:title] # => ["can't be blank"]
 m.errors[:rating] # => ["is not included in the list"]
 m.errors[:release_date] # => ["must be 1930 or later"]
-m.errors.full_messages # => ["Title can't be blank", "Rating is not
-  included in the list", "Release date must be 1930 or later"]
+m.errors.full_messages # => ["Title can't be blank", "Rating is not included in the list", "Release date must be 1930 or later"]
 
 
