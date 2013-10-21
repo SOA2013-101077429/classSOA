@@ -8,9 +8,11 @@ def show
   @movie = Movie.find(id) # look up movie by unique ID
   # will render app/views/movies/show.html.haml by default
   end
+
 def new
   # default: render 'new' template
 end
+
 # replaces the 'create' method in controller:
 def create
   @movie = Movie.new(params[:movie])
@@ -21,9 +23,11 @@ def create
     render 'new' # note, 'new' template can access @movie's field values!
   end
 end
+
 def edit
   @movie = Movie.find params[:id]
 end
+
 # replaces the 'update' method in controller:
 def update
   @movie = Movie.find params[:id]
@@ -34,12 +38,11 @@ def update
     render 'edit' # note, 'edit' template can access @movie's field values!
   end
 end
+
 # as a reminder, here is the original 'new' method:
 def new
   @movie = Movie.new
 end
-
-
 
 def destroy
   @movie = Movie.find(params[:id])

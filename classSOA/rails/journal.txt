@@ -148,4 +148,6 @@ NOTE: See http://pastebin.com/5A76getY for code for mass assignment of movies to
 Movie.all
 #returns all saved movies in table
 
+Assignment 4.6 - 4.8
+
 

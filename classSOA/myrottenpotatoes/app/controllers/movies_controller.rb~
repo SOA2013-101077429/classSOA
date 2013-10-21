@@ -21,6 +21,11 @@ def create
     render 'new' # note, 'new' template can access @movie's field values!
   end
 end
+
+def edit
+  @movie = Movie.find params[:id]
+end
+
 # replaces the 'update' method in controller:
 def update
   @movie = Movie.find params[:id]
@@ -35,9 +40,7 @@ end
 def new
   @movie = Movie.new
 end
-def edit
-  @movie = Movie.find params[:id]
-end
+
 
 
 def destroy
